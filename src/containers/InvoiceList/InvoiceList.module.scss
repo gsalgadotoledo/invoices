@@ -1,0 +1,12 @@
+@import "../../scss/main.scss";
+
+.InvoiceList {
+  @extend .row;
+
+  &__item {
+    @extend .col-sm-12,
+      .col-md-6,
+      .col-lg-4,
+      .col-xl-3;
+  }
+}

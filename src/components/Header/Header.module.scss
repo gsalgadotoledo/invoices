@@ -1,0 +1,30 @@
+@import "../../scss/main.scss";
+
+.Header {
+  font-size: $font-size-lg * 2;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+
+  &__text {
+    display: inline-block;
+    padding: 0 1rem;
+    background-color: $body-bg;
+    z-index: 2;
+    position: relative;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: $gray-400;
+    margin-left: 20%;
+    position: absolute;
+    top: 55px;
+    z-index: 1;
+  }
+}

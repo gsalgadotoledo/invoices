@@ -1,0 +1,8 @@
+@import "../../scss/main.scss";
+
+.Button {
+  @extend .btn, .btn-primary, .btn-lg;
+  border-radius: .5rem;
+  box-shadow: 0 2px 5px 0 rgba($primary, 0.16), 0 2px 10px 0 rgba($primary, 0.12);
+  font-weight: 600;
+}

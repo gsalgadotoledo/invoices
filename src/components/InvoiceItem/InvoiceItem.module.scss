@@ -1,0 +1,61 @@
+@import "../../scss/main.scss";
+
+.InvoiceItem {
+	border: 1px solid $gray-400;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: border .7s;
+  
+  &__image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__image {
+    width: 80%;
+    opacity: .1;
+  }
+
+  &__title {
+    @extend .text-truncate;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $gray-100;
+    color: $gray-800;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__label-container {
+    width: auto;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 45px;
+    height: 24px;
+  }
+
+  &__label {
+    font-family: $font-family-monospace;
+    color: $white;
+    background: $primary;
+    height: 100%;
+    padding: 0.05rem 0.5rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+  }
+
+	&:hover {
+		border: 1px solid $primary;
+	}
+}

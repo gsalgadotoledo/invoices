@@ -1,0 +1,52 @@
+@import "../../scss/main.scss";
+
+.InvoiceForm {
+	border: 1px solid $gray-400;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: border .7s;
+
+  &__form {
+    padding: 2rem;
+  }
+
+  &__items {
+    table-layout: fixed;
+    thead>tr>*:nth-child(2),
+    tbody>tr>*:nth-child(2) {
+      width:40%
+    }
+    thead>tr>*:nth-child(1),
+    tbody>tr>*:nth-child(1) {
+      width:5%
+    }
+  }
+
+  &__state {
+    width: auto;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 45px;
+    height: 24px;
+  }
+
+  &__label {
+    font-family: $font-family-monospace;
+    color: $white;
+    background: $primary;
+    height: 100%;
+    padding: 0.05rem 0.5rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+  }
+
+  &__link {
+    margin-right: 10px;
+  }
+}
