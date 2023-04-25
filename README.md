@@ -1,5 +1,8 @@
 This is an invoice managment basic app
 
+![Kapture 2023-04-24 at 22 27 07](https://user-images.githubusercontent.com/1288502/234168055-a78c4531-c9ef-4097-a4b0-55e9f247a394.gif)
+
+
 ## Running locally
 
 Clone the repo and install the libraries
